@@ -1,0 +1,19 @@
+<html>
+<body bgcolor=white>
+<pre>
+#!/bin/bash
+echo "prepping $1 for retirement/n"
+if [ -f /tmp/$1.list ] ; then
+	rm /tmp/$1.list
+fi
+find / -user $1 -print > /tmp/$1.list 2&>/dev/null
+tar cvf /tmp/$1.tar -T /tmp/$1.list
+for file in $(cat /tmp/$1.list) ; do
+	chown retired $file
+done
+rmuser -r $i
+echo "$1 has been deleted from system.  All files have had ownership changed to user 'retired' and all files have been copied to the tar file /tmp/$1.tar\n"
+</pre>
+
+</body>
+</html>

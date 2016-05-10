@@ -1,0 +1,28 @@
+<html>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-77508642-7', 'auto');
+      ga('send', 'pageview');
+
+      </script>
+<head><title>HTC Unix/Linux Shell Scripting Page</title></head>
+<body bgcolor=white>
+Shell scripting seems to confuse quite a few people.  In concept, it's no different than writing a batch file.  In practice, it's merely putting a series of commands into a text file.  It can, however, be much more than just a set of commands in a file.  A shell script can bring in command-line arguments, just like a regular program.  It can request input from a user.  It can read from and write to files.  Shell scripts can contain complex logic.  The limit of what a shell script can do is essentially the limit of the author's imagination and skill.<p>
+I've linked to several shell scripting tutorials here.  I hope you find them useful.<p>
+<ul>
+<li>The <a href="http://www.tldp.org/LDP/abs/html/">Advanced Bash-Scripting Guide</a> at Linuxdoc.  Don't worry, this assumes no prior knowledge on your part.</li>
+<li>Linuxorbit's <a href="http://www.linuxorbit.com/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=459">Introduction to Bash shell scripting</a> article.</li>
+<li>About.com's page on <a href="http://unix.about.com/cs/shellsbash/">The Bash shell</a>, containing several links to FAQs and programming tutorials.</li>
+</ul>
+Hopefully, those four links are enough to get you going.  Here are several examples of shell scripts.
+<ul>
+<li><a href="retire.html">Retire.bash</a>--a shell script which takes a username and removes an account from the system.</li>
+<li><a href="verify.html">verify.bash</a>--a shell script which does a long listing of a filename, then runs the md5sum program on it to get a checksum.  Useful for verifying downloaded CD iso images.</li>
+<li><a href="unix1_grader.awk">unix1_grader.awk</a>.  Even though this is a big awk command in a text file, it's still a shell script, since the shell is what executes awk.  This is the program I use to compute everyone's Unix1 grade.</li>
+<li><a href="slacker.html">slacker.bash</a>.  This script runs and tells me who has an account but has never even logged into the system.</li>
+</body>
+</html>
